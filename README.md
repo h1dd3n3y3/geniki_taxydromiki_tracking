@@ -3,7 +3,7 @@
 A "geniki taxydromiki" parcel tracking solution that can be integrated with [ntfy](http://ntfy.sh) or run standalone.
 
 ### Usage
-- No ntfy integration:
+- _No ntfy integration:_
   - Widnows:
     ```
     python geniki_taxydromiki.py <tracking-number>
@@ -12,7 +12,7 @@ A "geniki taxydromiki" parcel tracking solution that can be integrated with [ntf
     ```
     python3 geniki_taxydromiki.py <tracking-number>
     ```
-- With ntfy integration:
+- _With ntfy integration:_
   - Widnows:
     ```
     python geniki_taxydromiki.py <ntfy-server> <ntfy-topic> <tracking-number>
