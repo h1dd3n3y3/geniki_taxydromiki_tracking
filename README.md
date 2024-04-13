@@ -2,7 +2,7 @@
 
 A "geniki taxydromiki" parcel tracking solution that can be integrated with [ntfy.sh](http://ntfy.sh) or run standalone.
 
-###### Usage:
+### Usage:
 
 "python" is used for Widnows and "python3" for linux.
 
