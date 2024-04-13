@@ -4,6 +4,6 @@ A "geniki taxydromiki" parcel tracking solution that can be integrated with [ntf
 
 ### Usage:
 
-**python** for Widnows: `python geniki_taxydromiki.py`
+- **python** for Widnows: `python geniki_taxydromiki.py`
 
-**python3** for Linux: `python3 geniki_taxydromiki.py`
+- **python3** for Linux: `python3 geniki_taxydromiki.py`
