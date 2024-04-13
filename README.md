@@ -4,8 +4,10 @@ A "geniki taxydromiki" parcel tracking solution that can be integrated with [ntf
 
 ### Usage
 - No ntfy integration:
-  - Widnows:</ins> `python geniki_taxydromiki.py <tracking-number>`
-  - Linux:</ins> `python3 geniki_taxydromiki.py <tracking-number>`
+  - Widnows:
+    ```python geniki_taxydromiki.py <tracking-number>```
+  - Linux:
+    ```python3 geniki_taxydromiki.py <tracking-number>```
 - With ntfy integration:
   - Widnows:</ins> `python geniki_taxydromiki.py <ntfy-server> <ntfy-topic> <tracking-number>`
   - Linux:</ins> `python3 geniki_taxydromiki.py <ntfy-server> <ntfy-topic> <tracking-number>`
