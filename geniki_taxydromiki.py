@@ -11,6 +11,7 @@ elif len(sys.argv) == 2: # To be used as a standalone script
     tracking_number = sys.argv[1]
 else:
     print("Usage: python" + ("3" if sys.platform.startswith('linux') else "") + " geniki_taxydromiki.py <tracking_number>")
+    print("Usage with ntfy: python" + ("3" if sys.platform.startswith('linux') else "") + " geniki_taxydromiki.py <ntfy_server> <ntfy_topic> <tracking_number>")
     sys.exit(1)
 
 url = f"https://www.taxydromiki.com/en/track/{tracking_number}"
