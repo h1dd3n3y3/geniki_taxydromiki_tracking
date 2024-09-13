@@ -21,4 +21,4 @@ A "geniki taxydromiki" parcel tracking solution that can be integrated with [ntf
     ```
     python3 geniki_taxydromiki.py <ntfy-server> <ntfy-topic> <tracking-number>
     ```
-<img src="./Screenshot_ntfy.jpg" alt="Sample Image" style="width:20%">
+<img src="./Screenshot_ntfy.jpg" alt="Sample Image" style="width:100%">
