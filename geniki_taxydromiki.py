@@ -25,11 +25,19 @@ last_info = soup.find("div", class_="tracking-checkpoint last form-wrapper")
 status = last_info.find("div", class_="checkpoint-status").text.replace("Status", "")
 location = last_info.find("div", class_="checkpoint-location").text.replace("Location", "")
 date = last_info.find("div", class_="checkpoint-date").text.replace("Date", "")
-time = last_info.find("div", class_="checkpoint-time").text.replace("Time", "") # Encode later because in greek
+time = last_info.find("div", class_="checkpoint-time").text.replace("Time", "")
 
-message = f"Status: {status}\nLocation: {location}\nDate/Time: {date}, {time}"
+print(f"Status: {status}\nLocation: {location}\nDate/Time: {date}, {time}")
+exit(0)
+
+message = f"Status: {status}\nLocation: {location}\nDate/Time: {date}, {time}" # Encode later because in greek
 
 if len(sys.argv) == 4: # To be used along with ntfy
     requests.post(ntfy_dest, headers={"Title": "Geniki Taxydromiki tracking"}, data=message.encode('utf-8'))
 elif len(sys.argv) == 2: # To be used as a standalone script
     print(message)
+
+## TODO:
+## 1. Create dir dates containing tracking_num_date.log files
+## 2. Append the message to the corresponding file
+## 3. If last log is the same as the current one, do not send a notification
